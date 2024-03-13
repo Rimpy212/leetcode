@@ -1,21 +1,25 @@
 class Solution {
 public:
     int pivotInteger(int n) {
-        for(int i=1;i<=n;i++)
+        if(n==1)return 1;
+        int leftVal=1;
+        int rightVal=n;
+        int leftSum=leftVal;
+        int rightSum=rightVal;
+        while(leftVal<rightVal)
         {
-            int leftSum=0;
-            int rightSum=0;
-            for(int k=1;k<=i;k++)
+            if(leftSum<rightSum)
             {
-                leftSum+=k;
+                leftVal++;
+                leftSum+=leftVal;
             }
-            for(int j=i;j<=n;j++)
-            {
-                rightSum+=j;
+            else{
+                rightVal--;
+                rightSum+=rightVal;
             }
-            if(leftSum==rightSum)
+            if(leftSum==rightSum && leftVal+1==rightVal-1)
             {
-                return i;
+                return leftVal+1;
             }
         }
         return -1;
