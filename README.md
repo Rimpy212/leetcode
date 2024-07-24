@@ -5,8 +5,7 @@ Welcome to my LeetCode solutions repository! This repository contains the code f
 
 ## Table of Contents
 
-- [Languages Used](#Java, c++)
-- [List of Problems](#daily update)
+- [Languages Used] - Java, C++.
 
 ## Introduction
 
