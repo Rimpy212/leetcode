@@ -8,7 +8,7 @@ class Solution {
             i++;
             k++;
         }
-        Arrays.sort(nums1);
+        Arrays.sort(nums1);  // O(NlogN) : TC 
         return;
     }
 }
